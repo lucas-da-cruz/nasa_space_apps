@@ -3,6 +3,8 @@ import './home.css'
 //import img_01 from '../img/img_01.jpeg'; // with import
 import img from './img_01.jpeg'; // with import
 import logon from './logon.jpg'; // with import
+//import { Image } from 'react-bootstrap';
+import Image from 'react-bootstrap/Image';
 
 class Home extends Component{
  
@@ -19,7 +21,7 @@ class Home extends Component{
                     contra focos de incêndios e assim respectivamente cuidar da 
                     sociedade em que nela habita. Te convidamos a conhecer um pouco mais do nosso projeto e se juntar
                     conosco nessa luta a favor da preservação da nossa linda mãe natureza!</p>
-                    <img src={logon} />
+                    <img src={logon}  style={{width:'100%'}}/>
                 </article>
                 <article className="filme">
                     <h3>Nossa causa</h3>
