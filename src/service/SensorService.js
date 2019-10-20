@@ -36,7 +36,7 @@ class SensorService {
         //busca os dados do telefone
         axios.get(`${sheets}/e074dc63-ea7e-484b-bec3-f820f5ebaa8c`).then
         (response => {
-            console.log(response.data);
+            //console.log(response.data);
             user = response.data;
 
             telefone = user[0].telefone;

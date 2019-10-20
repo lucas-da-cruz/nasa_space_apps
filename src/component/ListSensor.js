@@ -36,7 +36,7 @@ class ListSensorComponent extends Component {
         //console.log('notificado ' + id)
         SensorService.notificar(sensors);
         
-        //this.props.history.push(`/courses/${id}`)
+        this.props.history.push('/notificado');
     }
 
     deleteRegistro(sensors) {
@@ -57,8 +57,7 @@ class ListSensorComponent extends Component {
         return (
             <div>
             <br />
-            <div>
-                <center><h3>Dados via sensores</h3></center>
+                <center><h3>Monitoramento via sensor</h3></center>
             <br />
                 
                     <Table responsive="sm" variant="dark">
@@ -68,7 +67,7 @@ class ListSensorComponent extends Component {
                                 <th>Data</th>
                                 <th>Temperatura</th>
                                 <th>Notificado</th>
-                                <th>Notificações</th>
+                                <th>Enviar alerta</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -89,8 +88,6 @@ class ListSensorComponent extends Component {
                             }
                         </tbody>
                     </Table>
-                    
-                </div>
             </div>
         )
     }

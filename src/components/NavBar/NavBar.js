@@ -13,9 +13,9 @@ class Navbare extends Component{
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
         <Nav className="mr-auto">
-          <Nav.Link><Link to={"/insert/denuncia"}>Denúnciar</Link></Nav.Link>
-          <Nav.Link><Link to={"/denuncia/list"}>Monitor</Link></Nav.Link>
           <Nav.Link><Link to={"/sensor/list"}>Sensores</Link></Nav.Link>
+          <Nav.Link><Link to={"/insert/denuncia"}>Denunciar</Link></Nav.Link>
+          <Nav.Link><Link to={"/denuncia/monitor"}>Monitor</Link></Nav.Link>
           <Nav.Link><Link to={"/insert/user"}>Cadastrar</Link></Nav.Link>
           <Nav.Link><Link to={"/user/list"}>Usuários</Link></Nav.Link>
         </Nav>
