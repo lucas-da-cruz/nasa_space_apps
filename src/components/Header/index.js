@@ -11,9 +11,7 @@ function Header(){
         <Link to="/">
           Fire Notifier
         </Link>
-        <Link to="/login">
-          Entrar
-        </Link>
+        
       </div>
     </header>
     </>

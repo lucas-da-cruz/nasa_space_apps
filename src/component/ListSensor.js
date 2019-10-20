@@ -35,7 +35,7 @@ class ListSensorComponent extends Component {
     notificacao(sensors) {
         //console.log('notificado ' + id)
         SensorService.notificar(sensors);
-
+        
         //this.props.history.push(`/courses/${id}`)
     }
 
@@ -55,19 +55,20 @@ class ListSensorComponent extends Component {
 /*id    localizacao data    temperatura notificado*/
     render() {
         return (
-            <div className="container">
-                <h3>Dados do sensor</h3>
-                <div className="container">
-                    <Table striped bordered hover variant="dark">
+            <div>
+            <br />
+            <div>
+                <center><h3>Dados via sensores</h3></center>
+            <br />
+                
+                    <Table responsive="sm" variant="dark">
                         <thead>
-                            <tr>
-                                <th>Id</th>
+                            <tr>                                
                                 <th>Localizacao</th>
                                 <th>Data</th>
                                 <th>Temperatura</th>
                                 <th>Notificado</th>
                                 <th>Notificações</th>
-                                <th>Deletar</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -75,18 +76,14 @@ class ListSensorComponent extends Component {
                                 this.state.sensor.map(
                                     sensors =>
                                         <tr key={sensors.id}>
-                                            <td>{sensors.id}</td>
                                             <td>{sensors.localizacao}</td>
                                             <td>{sensors.data}</td>
                                             <td>{sensors.temperatura}</td>
                                             <td>{sensors.notificado}</td>
                                             <td>
-                                                <a href="/sensor/list"><button className="btn btn-success" onClick={() => this.notificacao(sensors)}>Notificar</button></a>
+                                                <button className="btn btn-success" onClick={() => this.notificacao(sensors)}>Notificar</button>
                                             </td>
-                                            <td>
-                                                <a href="/sensor/list"><button className="btn btn-warning" onClick={() => this.deleteRegistro(sensors)}>Apagar</button></a>
-                                            </td>
-
+                                            
                                         </tr>
                                 )
                             }

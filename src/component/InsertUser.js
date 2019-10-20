@@ -42,7 +42,7 @@ class InsertUser extends Component {
 
         UserService.createUser(user);
                 //.then(() => this.props.history.push('/user/list'))
-                
+
         //console.log(values);
     }
 
@@ -85,7 +85,7 @@ class InsertUser extends Component {
                                         <label>Cidade</label>
                                         <Field className="form-control" type="text" name="cidade"/>
                                     </fieldset>
-                                    <button className="btn btn-success" type="submit" onSubmit={this.onSubmit}>Save</button>
+                                    <button className="btn btn-success" type="submit" onSubmit={this.onSubmit}>Cadastrar</button>
                                 </Form>
                             )
                         }

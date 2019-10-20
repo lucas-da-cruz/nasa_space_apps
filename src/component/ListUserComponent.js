@@ -53,10 +53,12 @@ class ListUserComponent extends Component {
 /*telefone  nome    cidade  geolocalizacao*/
     render() {
         return (
-            <div className="container">
-                <h3>Usuários</h3>
-                <div className="container">
-                    <Table striped bordered hover variant="dark">
+            <div>
+            <br />
+                <center><h3>Usuário cadastrados</h3></center>
+            <br />
+                <div>
+                    <Table responsive="sm" variant="dark">
                         <thead>
                             <tr>
                                 <th>Nome</th>
