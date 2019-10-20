@@ -65,7 +65,7 @@ class ListSensorComponent extends Component {
                             <tr>                                
                                 <th>Localizacao</th>
                                 <th>Data</th>
-                                <th>Temperatura</th>
+                                <th>Status</th>
                                 <th>Notificado</th>
                                 <th>Enviar alerta</th>
                             </tr>

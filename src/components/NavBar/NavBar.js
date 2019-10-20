@@ -2,7 +2,6 @@ import React, {Component} from 'react';
 import {Navbar, Nav, Form, Button, FormControl, NavDropdown } from 'react-bootstrap';
 import {Link} from 'react-router-dom';
 
-
 class Navbare extends Component{
 
  render(){
@@ -14,7 +13,6 @@ class Navbare extends Component{
           <Navbar.Collapse id="basic-navbar-nav">
         <Nav className="mr-auto">
           <Nav.Link><Link to={"/sensor/list"}>Sensores</Link></Nav.Link>
-          <Nav.Link><Link to={"/insert/denuncia"}>Denunciar</Link></Nav.Link>
           <Nav.Link><Link to={"/denuncia/monitor"}>Monitor</Link></Nav.Link>
           <Nav.Link><Link to={"/insert/user"}>Cadastrar</Link></Nav.Link>
           <Nav.Link><Link to={"/user/list"}>Usuários</Link></Nav.Link>

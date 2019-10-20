@@ -21,7 +21,7 @@ class Home extends Component{
                     contra focos de incêndios e assim respectivamente cuidar da 
                     sociedade em que nela habita. Te convidamos a conhecer um pouco mais do nosso projeto e se juntar
                     conosco nessa luta a favor da preservação da nossa linda mãe natureza!</p>
-                    <img src={logon}  style={{width:'100%'}}/>
+                    <img src={img} />
                 </article>
                 <article className="filme">
                     <h3>Nossa causa</h3>
@@ -32,7 +32,7 @@ class Home extends Component{
                     <p align="justify">O Fire Notifier visa agir em conjunto com entidades departamentais em prol da causa contra a queimada ilegal,
                     Orgãos como: Defesa Civil, Brigadistas do Corpo de Bombeiros, Polícia florestal, 
                     orgãos da reserva ambiental e o público voluntário.</p>
-                    <img src={img} />
+                    <img src={logon}  style={{width:'100%'}}/>
                   </article>
                 </div>
 
