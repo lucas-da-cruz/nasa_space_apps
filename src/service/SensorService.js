@@ -39,10 +39,16 @@ class SensorService {
             //console.log(response.data);
             user = response.data;
 
+            //telefone = user[0].telefone;
             telefone = user[0].telefone;
+            //var ultimo = array[user.length - 1];
+
             /*id    localizacao data    temperatura notificado*/
             console.log(`${api}/sendSms?account=19173&user=Nasa&pass=Nasa&to=`+user[0].telefone+`&msg=Evento Nasa - Incendio em sua regiao&idSms=nasa`);
-            //axios.get(`${api}/sendSms?account=19173&user=Nasa&pass=Nasa&to=`+user[0].telefone+`&msg=Evento Nasa - Incendio em sua regiao&idSms=nasa`);
+            console.log(`${api}/sendSms?account=19173&user=Nasa&pass=Nasa&to=`+user[user.length - 1].telefone+`&msg=Evento Nasa - Incendio em sua regiao&idSms=nasa`);
+
+            //axios.get(`${api}/sendSms?account=19173&user=Nasa&pass=Nasa&to=`+user[user.length - 1].telefone+`&msg=Evento Nasa - Incendio em sua regiao&idSms=nasa`);
+            axios.get(`${api}/sendSms?account=19173&user=Nasa&pass=Nasa&to=`+user[0].telefone+`&msg=Evento Nasa - Perigo de incendio em sua regiao&idSms=nasa`);
             
             var url_update = `${sheets}/12bd5c43-09c2-4412-83e8-398e1946672d/id/`+sensors.id;
             
