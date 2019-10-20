@@ -9,9 +9,8 @@ import InsertDenuncia from './component/InsertDenuncia';
 import ListMonitor from './component/ListMonitor';
 import Notificado from './component/Notificado';
 import Erro from './component/Erro';
-
-
-
+import DenunciaSucesso from './component/DenunciaSucesso';
+import CadastradoSucesso from './component/CadastradoSucesso';
 
 //import CourseComponent from './component/CourseComponent';
 import Header from './components/Header';
@@ -33,6 +32,8 @@ class Routes extends Component {
                         <Route path="/insert/denuncia" exact component={InsertDenuncia} />
                         <Route path="/denuncia/monitor" exact component={ListMonitor} />
                         <Route path="/notificado" exact component={Notificado} />
+                        <Route path="/sucessDenuncia" exact component={DenunciaSucesso} />
+                        <Route path="/cadastradoSucessso" exact component={CadastradoSucesso} />
                         <Route path="*" component={Erro}/>
                     </Switch>
             </Router>

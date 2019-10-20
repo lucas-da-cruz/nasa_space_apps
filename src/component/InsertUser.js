@@ -40,7 +40,9 @@ class InsertUser extends Component {
             cidade: values.cidade
         }
 
-        UserService.createUser(user);
+        this.props.history.push('/cadastradoSucessso');
+
+        //UserService.createUser(user);
                 //.then(() => this.props.history.push('/user/list'))
 
         //console.log(values);
