@@ -11,11 +11,8 @@ function Header(){
     <header id="main-header">
       <div className="header-content">
         <Link to="/">
-          Fire Notifier
-        </Link>
-          <Button variant="primary"><Link to={"/insert/denuncia"}>Denunciar</Link></Button>
-
-        
+          Health & Wellness
+        </Link>        
       </div>
     </header>
     </>

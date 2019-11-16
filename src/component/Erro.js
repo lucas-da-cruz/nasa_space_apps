@@ -1,13 +1,8 @@
 import React, { Component } from 'react';
-import SensorService from '../service/SensorService';
 import { Route } from 'react-router-dom'
 import { Table } from 'react-bootstrap';
 
-
-//Componente criado para listar os cursos em uma tabela
-class Erro extends Component {
-
-   
+class Erro extends Component {   
     render() {
         return (
             <div>
@@ -19,4 +14,4 @@ class Erro extends Component {
     }
 }
 
-export default Erro
+export default Erro;

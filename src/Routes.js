@@ -1,16 +1,11 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
-//import ListCoursesComponent from './component/ListCoursesComponent';
 
-import ListUserComponent from './component/ListUserComponent';
-import ListSensor from './component/ListSensor';
-import InsertUser from './component/InsertUser';
-import InsertDenuncia from './component/InsertDenuncia';
-import ListMonitor from './component/ListMonitor';
-import Notificado from './component/Notificado';
 import Erro from './component/Erro';
-import DenunciaSucesso from './component/DenunciaSucesso';
-import CadastradoSucesso from './component/CadastradoSucesso';
+import Glicemia from './component/glicemia';
+import Imc from './component/imc';
+import Colesterol from './component/colesterol';
+import Pressao from './component/pressao';
 
 //import CourseComponent from './component/CourseComponent';
 import Header from './components/Header';
@@ -26,14 +21,11 @@ class Routes extends Component {
                     <NavBare/>
                     <Switch>
                         <Route path="/" exact component={Home} />
-                        <Route path="/user/list" exact component={ListUserComponent} />
-                        <Route path="/sensor/list" exact component={ListSensor} />
-                        <Route path="/insert/user" exact component={InsertUser} />
-                        <Route path="/insert/denuncia" exact component={InsertDenuncia} />
-                        <Route path="/denuncia/monitor" exact component={ListMonitor} />
-                        <Route path="/notificado" exact component={Notificado} />
-                        <Route path="/sucessDenuncia" exact component={DenunciaSucesso} />
-                        <Route path="/cadastradoSucessso" exact component={CadastradoSucesso} />
+                        <Route path="/glicemia" exact component={Glicemia} />
+                        <Route path="/imc" exact component={Imc} />
+                        <Route path="/colesterol" exact component={Colesterol} />
+                        <Route path="/pressao" exact component={Pressao} />
+
                         <Route path="*" component={Erro}/>
                     </Switch>
             </Router>

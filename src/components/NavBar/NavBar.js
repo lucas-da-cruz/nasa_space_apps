@@ -12,10 +12,11 @@ class Navbare extends Component{
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
         <Nav className="mr-auto">
-          <Nav.Link><Link to={"/sensor/list"}>Sensores</Link></Nav.Link>
-          <Nav.Link><Link to={"/denuncia/monitor"}>Monitor</Link></Nav.Link>
-          <Nav.Link><Link to={"/insert/user"}>Cadastrar</Link></Nav.Link>
-          <Nav.Link><Link to={"/user/list"}>Usuários</Link></Nav.Link>
+          <Nav.Link><Link to={"/imc"}>IMC</Link></Nav.Link>
+          <Nav.Link><Link to={"/glicemia"}>Glicemia</Link></Nav.Link>
+          <Nav.Link><Link to={"/colesterol"}>Colesterol</Link></Nav.Link>
+          <Nav.Link><Link to={"/pressao"}>Pressão Arterial</Link></Nav.Link>
+         
         </Nav>
   </Navbar.Collapse>
 </Navbar>        
