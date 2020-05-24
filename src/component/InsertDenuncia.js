@@ -38,6 +38,7 @@ class InsertDenuncia extends Component {
         let denuncia = {
             descricao : values.nome
         }
+        this.props.history.push('/sucessDenuncia');
 
         //DenunciaService.createDenuncia(denuncia);
         

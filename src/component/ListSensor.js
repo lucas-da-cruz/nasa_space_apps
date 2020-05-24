@@ -36,7 +36,7 @@ class ListSensorComponent extends Component {
         //console.log('notificado ' + id)
         SensorService.notificar(sensors);
         
-        this.props.history.push('/notificado');
+        //this.props.history.push('/notificado');
     }
 
     deleteRegistro(sensors) {
